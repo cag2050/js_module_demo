@@ -15,5 +15,7 @@ function multiply(x, y) {
     return x * y
 }
 
-// as 用来重命名，重命名后，可以用不同的名字输出两次。
-export { firstName, lastName, year, multiply as multi }
+// as 用来重命名。重命名后，只能用重命名的名字。
+// multiply, multiply as multi  ===写成这样的话，import能导入 multiply和multi
+// multiply as multi  ===写成这样的话，import只能导入 multi
+export { firstName, lastName, year, multiply, multiply as multi }
