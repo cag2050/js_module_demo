@@ -1,8 +1,8 @@
 // export写法1
 // 导出匿名函数
-// export default function () {
-//     console.log('foo1');
-// }
+export default function () {
+    console.log('foo1');
+}
 
 // export写法2
 // 导出非匿名函数
@@ -24,7 +24,7 @@
 
 // export写法4
 // 因为export default本质是将该命令后面的值，赋给default变量，所以可以直接将一个值写在export default之后。
-export default 'foo4'
+// export default 'foo4'
 
 
 
