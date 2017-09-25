@@ -22,8 +22,8 @@ Your runtime supports 90% of ECMAScript 6
 =========================================
 ```
 
-#### 让node支持es模块化(export、import)的方法：
-1. babel-node方式（使用babel-node命令，或webstorm配置Node interpreter直接run)
+### 让node支持es模块化(export、import)的方法：
+1. babel-node方式（使用babel-node命令，或webstorm配置Node interpreter直接run)  
 1）使用babel-node命令
 全局安装babel-cli，项目安装babel-preset-es2015，新建.babelrc文件，内容如下：
 ```
