@@ -1,6 +1,6 @@
-* node版本v7.9.0，支持了大部分es6的功能，但还不支持es6模块化(export、import)。
+##### node版本v7.9.0，支持了大部分es6的功能，但还不支持es6模块化(export、import)。
 
-* 检测ES6
+### 检测ES6
 可以使用es-checker来检测当前Node.js对ES6的支持情况。
 使用命令，全局安装es-checker：
 ```
@@ -22,7 +22,7 @@ Your runtime supports 90% of ECMAScript 6
 =========================================
 ```
 
-* 让node支持es模块化(export、import)的方法：
+#### 让node支持es模块化(export、import)的方法：
 1. babel-node方式（使用babel-node命令，或webstorm配置Node interpreter直接run)
 1）使用babel-node命令
 全局安装babel-cli，项目安装babel-preset-es2015，新建.babelrc文件，内容如下：
@@ -41,7 +41,7 @@ Your runtime supports 90% of ECMAScript 6
 babel-node import.js
 ```
 2）webstorm配置Node interpreter直接run
-打开webstorm，Preferences - Languages & Frameworks - Node.js and NPM - Node interpreter - Add... - Add Local - 选择项目里安装的node_modules/babel-cli/bin/babel-node.js - OK，现在直接run相应的js文件即可。
+打开webstorm，Preferences - Languages & Frameworks - Node.js and NPM - Node interpreter - Add... - Add Local - 选择项目里安装的node_modules/babel-cli/bin/babel-node.js - OK，现在直接run相应的js文件即可。  
 2. 从版本8.5.0开始，通过一个命令行选项：experimental-modules，Node.js就能支持原生的ES模块。
 需要将 Node 源码文件后缀名改成.mjs。
 ```
