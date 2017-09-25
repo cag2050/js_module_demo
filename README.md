@@ -34,15 +34,15 @@ Your runtime supports 90% of ECMAScript 6
     "plugins": []
 }
 ```
-然后，使用babel-node命令运行带es模块化代码的js文件：
+然后，使用babel-node命令运行带es模块化代码的js文件：  
 说明：babel-cli工具自带一个babel-node命令，提供一个支持ES6的REPL环境。它支持Node的REPL环境的所有功能，而且可以直接运行ES6代码。
 它不用单独安装，而是随babel-cli一起安装。
 ```
 babel-node import.js
 ```
-2）webstorm配置Node interpreter直接run
+2）webstorm配置Node interpreter直接run  
 打开webstorm，Preferences - Languages & Frameworks - Node.js and NPM - Node interpreter - Add... - Add Local - 选择项目里安装的node_modules/babel-cli/bin/babel-node.js - OK，现在直接run相应的js文件即可。  
-2. 从版本8.5.0开始，通过一个命令行选项：experimental-modules，Node.js就能支持原生的ES模块。
+2. 从版本8.5.0开始，通过一个命令行选项：experimental-modules，Node.js就能支持原生的ES模块。  
 需要将 Node 源码文件后缀名改成.mjs。
 ```
 node --experimental-modules main.mjs
